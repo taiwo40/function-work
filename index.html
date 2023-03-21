@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The sum of 55 and 78 is <b id="sum"></b> </p>
+    <p> the subtraction of 99 and 108 is <b id="sub"></b></p>
+    <P> the multiplication of 85 and 7 is <b id="mult"></b> </P>
+    <p> the division of 24 and 4 is <b id="div"></b></p>
+    <p>the exponential of 7 and 65 is <b id="expo"></b></p>
+    <p> the modulus of 50 and 100 is <b id="modu"></b> </p>
+    <script>
+      function sum( a=55,b=78){
+      let c=a+b
+      return c
+      }
+      function sub( d=99,e=108){
+        let f=d-e
+        return f
+      }
+      function mult( g= 85,h=7){
+        let i=g*h
+        return i
+      }
+      function div( j=44,k=88){
+        let L=j/k
+        return L
+      }
+      function expo( m= 85,n=7){
+        let o=m**n
+        return o
+    }
+    function modu(p= 85,q=7){
+        let r=p%q
+        return r
+    }
+
+      console.log(sum())
+      document.getElementById("sum").innerHTML= sum(55,78)
+        
+      console.log(sub())
+      document.getElementById("sub").innerHTML= sub(99,108)
+      
+      console.log(mult())
+      document.getElementById("mult").innerHTML= mult(85,7)
+     
+      console.log(div())
+      document.getElementById("div").innerHTML= div(44,88)
+     
+      console.log(expo())
+      document.getElementById("expo").innerHTML= expo(85,7)
+      
+      console.log(modu())
+      document.getElementById("modu").innerHTML= modu(50,100)
+
+    </script>
+</body>
+</html>
